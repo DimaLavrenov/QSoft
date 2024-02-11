@@ -1,0 +1,159 @@
+header{
+
+    padding: 20px calc(30px + (100vw - 1024px) * (30 - 100) / (1024 -  1440));
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.05);
+    position: relative;
+    @media only screen and (max-width: $breakpoint-notebook) {
+        padding: 20px calc(20px + (100vw - 768px) * (20 - 30)/(768 - 1024));
+    }
+    @media only screen and (max-width: $breakpoint-table) {
+        padding: 20px calc(20px + (100vw - 425px) * (20 - 20)/(425 - 768));
+    }
+
+    @media only screen and (max-width: 590px) {
+        box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.05);
+        padding: 0px calc(20px + (100vw - 425px) * (20 - 20)/(425 - 768));
+    }
+
+        .container_header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media only screen and (max-width: 590px) {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                box-shadow: none;
+                padding: 17px 0px 16px;
+            }
+        }
+
+    .search-field_adaptive{
+        display: none;
+        @media only screen and (max-width: 590px) {
+            width: 100%;
+            display: flex;
+            height: 42px;
+
+            .searchTerm{
+                border: none;
+                border-left: none;
+                outline: none;
+                width: 100%;
+                padding: 8px 10px 8px 9px;
+            }
+            .searchTerm::placeholder{
+                color: $placeholder-color;
+            }
+            .search_icon{
+                display: flex;
+                align-items: center;
+                border: none;
+                border-right: none;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+        .border_adaptive{
+            @media only screen and (max-width: 590px) {
+                width: 100%;
+                height: 1px;
+                background-color: rgba(187, 196, 214, 1);
+                position: absolute;
+                left: 0;
+            }
+        }
+    }
+
+    // logo
+    .logo{
+        display: flex;
+    }
+
+    // searh field
+    .search_field{
+        width: 835px;
+        height: 40px;
+        display: flex;
+        @media only screen and (max-width: 1280px) {
+            width: 600px;
+        }
+        @media only screen and (max-width: 980px) {
+            width: 400px;
+        }
+        @media only screen and (max-width: $breakpoint-table) {
+            width: 344px;
+        }
+        @media only screen and (max-width: 680px) {
+            width: 240px;
+        }
+        @media only screen and (max-width: 590px) {
+            display: none;
+        }
+
+        .searchTerm{
+            border-radius: 0px 5px 5px 0px;
+            border: 1px solid rgba(235, 235, 241, 1);
+            border-left: none;
+            outline: none;
+            width: 100%;
+            padding: 8px 10px 8px 9px;
+        }
+        .searchTerm::placeholder{
+            color: $placeholder-color;
+        }
+        .search_icon{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            border-radius: 5px 0px 0px 5px;
+            border: 1px solid rgba(235, 235, 241, 1);
+            border-right: none;
+            outline: none;
+            padding-left: 10px;
+            cursor: pointer;
+        }
+    }
+
+    //profile
+    .profile{
+        display: flex;
+        align-items: center;
+        .rect{
+            width: 1px;
+            height: 100%;
+            background-color: rgba(235, 235, 241, 1);
+            position: absolute;
+            @media only screen and (max-width: 590px) {
+                display: none;
+            }
+        }
+        .name_user{
+            margin: 0px 10px 0px 19px;
+            @media only screen and (max-width: 590px) {
+                display: none;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16.8px;
+                letter-spacing: 1%;
+                color: $paragraph-color;
+            }
+        }
+        .avatar{
+            width: 40px;
+            height: 40px;
+
+            background: url(../../../assets/images/avatar.webp) no-repeat center;
+            background-size: cover;
+            border-radius: 50%;
+
+            @media only screen and (max-width: 590px) {
+                background: url(../../../assets/images/profile-icon.svg) no-repeat center;
+                background-size: cover;
+            }
+        }
+    }
+}

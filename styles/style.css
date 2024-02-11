@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+header {
+  padding: 20px calc(30px + (100vw - 1024px) * -70 / -416);
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+@media only screen and (max-width: 1024px) {
+  header {
+    padding: 20px calc(20px + (100vw - 768px) * -10 / -256);
+  }
+}
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 20px calc(20px + (100vw - 425px) * 0 / -343);
+  }
+}
+@media only screen and (max-width: 590px) {
+  header {
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.05);
+    padding: 0px calc(20px + (100vw - 425px) * 0 / -343);
+  }
+}
+header .container_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 590px) {
+  header .container_header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: none;
+    padding: 17px 0px 16px;
+  }
+}
+header .search-field_adaptive {
+  display: none;
+}
+@media only screen and (max-width: 590px) {
+  header .search-field_adaptive {
+    width: 100%;
+    display: flex;
+    height: 42px;
+  }
+  header .search-field_adaptive .searchTerm {
+    border: none;
+    border-left: none;
+    outline: none;
+    width: 100%;
+    padding: 8px 10px 8px 9px;
+  }
+  header .search-field_adaptive .searchTerm::-moz-placeholder {
+    color: rgb(187, 196, 214);
+  }
+  header .search-field_adaptive .searchTerm::placeholder {
+    color: rgb(187, 196, 214);
+  }
+  header .search-field_adaptive .search_icon {
+    display: flex;
+    align-items: center;
+    border: none;
+    border-right: none;
+    outline: none;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 590px) {
+  header .search-field_adaptive .border_adaptive {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(187, 196, 214);
+    position: absolute;
+    left: 0;
+  }
+}
+header .logo {
+  display: flex;
+}
+header .search_field {
+  width: 835px;
+  height: 40px;
+  display: flex;
+}
+@media only screen and (max-width: 1280px) {
+  header .search_field {
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  header .search_field {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header .search_field {
+    width: 344px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  header .search_field {
+    width: 240px;
+  }
+}
+@media only screen and (max-width: 590px) {
+  header .search_field {
+    display: none;
+  }
+}
+header .search_field .searchTerm {
+  border-radius: 0px 5px 5px 0px;
+  border: 1px solid rgb(235, 235, 241);
+  border-left: none;
+  outline: none;
+  width: 100%;
+  padding: 8px 10px 8px 9px;
+}
+header .search_field .searchTerm::-moz-placeholder {
+  color: rgb(187, 196, 214);
+}
+header .search_field .searchTerm::placeholder {
+  color: rgb(187, 196, 214);
+}
+header .search_field .search_icon {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 5px 0px 0px 5px;
+  border: 1px solid rgb(235, 235, 241);
+  border-right: none;
+  outline: none;
+  padding-left: 10px;
+  cursor: pointer;
+}
+header .profile {
+  display: flex;
+  align-items: center;
+}
+header .profile .rect {
+  width: 1px;
+  height: 100%;
+  background-color: rgb(235, 235, 241);
+  position: absolute;
+}
+@media only screen and (max-width: 590px) {
+  header .profile .rect {
+    display: none;
+  }
+}
+header .profile .name_user {
+  margin: 0px 10px 0px 19px;
+}
+@media only screen and (max-width: 590px) {
+  header .profile .name_user {
+    display: none;
+  }
+}
+header .profile .name_user p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  letter-spacing: 1%;
+  color: rgb(118, 130, 152);
+}
+header .profile .avatar {
+  width: 40px;
+  height: 40px;
+  background: url(../../../assets/images/avatar.webp) no-repeat center;
+  background-size: cover;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 590px) {
+  header .profile .avatar {
+    background: url(../../../assets/images/profile-icon.svg) no-repeat center;
+    background-size: cover;
+  }
+}
+
+section {
+  padding: 0px calc(30px + (100vw - 1024px) * -70 / -416);
+}
+@media only screen and (max-width: 1024px) {
+  section {
+    padding: 0px calc(20px + (100vw - 768px) * -10 / -256);
+  }
+}
+@media only screen and (max-width: 768px) {
+  section {
+    padding: 20px calc(20px + (100vw - 425px) * 0 / -343);
+  }
+}
+section h3 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 57.6px;
+  color: rgb(18, 25, 32);
+  margin: 70px 0px 30px 0px;
+}
+@media only screen and (max-width: 1280px) {
+  section h3 {
+    font-size: 30px;
+    margin: 50px 0px 10px 0px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  section h3 {
+    margin: 70px 0px 30px;
+    font-size: 28px;
+    line-height: 44.8px;
+  }
+}
+section .parthners {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+section .parthners .item {
+  width: calc(25% - 30px);
+  height: 120px;
+  border: 1px solid rgb(235, 235, 241);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.1s ease-out;
+  margin: 15px;
+  padding: 20px;
+}
+@media only screen and (max-width: 768px) {
+  section .parthners .item {
+    width: calc(33.3333333333% - 20px);
+    margin: 10px;
+  }
+}
+@media only screen and (max-width: 590px) {
+  section .parthners .item {
+    width: calc(50% - 20px);
+    margin: 10px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  section .parthners .item {
+    width: calc(100% - 20px);
+    height: 140px;
+  }
+}
+section .parthners .item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+section .parthners .item:hover {
+  box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}/*# sourceMappingURL=style.css.map */
